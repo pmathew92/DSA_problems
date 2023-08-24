@@ -53,9 +53,6 @@ class LruCacheHashMap<K, V>(private val capacity: Int) {
      */
     fun dump() {
         println(linkedHashMap)
-        linkedHashMap.forEach { t, u ->
-            println(" ${t} : $u")
-        }
     }
 }
 
