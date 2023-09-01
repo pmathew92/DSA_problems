@@ -5,7 +5,7 @@ package misc
  */
 class LruCache<K, V>(private val capacity: Int) {
 
-    inner class Node<K, V>(val key: K, var value: V) {
+     class Node<K, V>(val key: K, var value: V) {
         var next: Node<K, V>? = null
         var previous: Node<K, V>? = null
     }
@@ -109,4 +109,8 @@ fun main() {
     cache.dump()   //prints  4 : 400    3 : 300    2 : 200
     println(cache.get(3)) //prints 300
     cache.dump()  //prints  3 : 300    4 : 400     2 : 200
+}
+
+fun String.name(){
+    println(this)
 }
