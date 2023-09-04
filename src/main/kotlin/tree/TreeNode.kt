@@ -40,7 +40,7 @@ fun <T> printBinaryTree(root: TreeNode<T>?, indent: String) {
  */
 fun main() {
     val root = populateIntegerTree()
-    printBinaryTree(root,"  ")
+    printBinaryTree(root, "  ")
 }
 
 private fun populateIntegerTree(): TreeNode<Int> {
