@@ -43,6 +43,27 @@ fun main() {
     printBinaryTree(root, "  ")
 }
 
+fun preOrderTraversal(node: TreeNode<Int>?) {
+    node ?: return
+    println("Node value is ${node.value} ")
+    preOrderTraversal(node.left)
+    preOrderTraversal(node.right)
+}
+
+fun inOrderTraversal(node: TreeNode<Int>?) {
+    node ?: return
+    inOrderTraversal(node.left)
+    println("Node value is ${node.value} ")
+    inOrderTraversal(node.right)
+}
+
+fun postOrderTraversal(node: TreeNode<Int>?) {
+    node ?: return
+    postOrderTraversal(node.left)
+    postOrderTraversal(node.right)
+    println("Node value is ${node.value} ")
+}
+
 private fun populateIntegerTree(): TreeNode<Int> {
     println("Enter the root node")
     val scanner = Scanner(System.`in`)
