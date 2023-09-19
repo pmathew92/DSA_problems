@@ -14,10 +14,10 @@ fun main() {
 }
 
 
-private fun isAnagram(s: String, t: String): Boolean {
+fun isAnagram(s: String, t: String): Boolean {
     if (s.length != t.length) return false
 
-    val characterMap = s.groupingBy { it.toLowerCase() }.eachCount().toMutableMap()
+    val characterMap = s.groupingBy { it.lowercaseChar() }.eachCount().toMutableMap()
 
     t.forEach {
         if (!characterMap.containsKey(it)) return false
