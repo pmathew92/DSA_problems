@@ -1,7 +1,7 @@
 package arrays.slidingwindow
 
 /**
- * Given an array of positive integers a and a positive number K,
+ * Given an array of positive integers arr and a positive number K,
  * find the length of the smallest contiguous subarray whose sum is greater than or equal to K.
  * Return 0 if no such subarray exists.
  */
